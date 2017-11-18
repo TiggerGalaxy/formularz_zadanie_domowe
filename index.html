@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zapis uczestnika na szkolenie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" id="kolor" action="https://formspree.io/chopin104@gmail.com" >
+        <label for="imie">Imię:</label><br>
+        <input type="text" id="imie" name="imie"><br>
+        
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" id="nazwisko" name="nazwisko"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="tel">Telefon:</label><br>
+        <input type="number" id="tel" name="tel"><br>
+        
+        <label for="miasto1">Miasto:</label><br> 
+            <select type="select">
+                <option value="warszawa"  class="miasto1">Warszawa</option> 
+                <option value="krakow" selected  class="miasto1">Kraków</option>
+                <option value="gdansk"  class="miasto1">Gdańsk</option>
+            </select><br>
+        
+        <label for="plec">Płeć:</label><br>
+        
+        <input type="radio" value="mezczyzna"  name="gender" class="plec"><span>Mężczyzna</span><br>
+        
+        <input type="radio" value="kobieta"  name="gender" class="plec"><span>Kobieta</span><br>
+        
+        <label for="dane">Wyrażam zgode na przetwarzanie danych osobowych:</label><br>
+        <input type="checkbox" id="dane" name="dane"><br>
+        
+        <label type="text" for="wiadomosc">Wiadomość:</label><br>
+        <textarea name="wiadomosc" id="wiadomosc"
+         cols="30" rows="10"></textarea><br>
+        
+        <input type="submit" value="Prześlji">
+    </form>
+</body>
+</html>
